@@ -1,0 +1,25 @@
+{
+  "name": "ajax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillLodygin/AJAX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirillLodygin/AJAX/issues"
+  },
+  "homepage": "https://github.com/KirillLodygin/AJAX#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "http-server": "^13.0.2",
+    "prettier": "^2.4.1"
+  }
+}

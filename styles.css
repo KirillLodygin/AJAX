@@ -1,0 +1,294 @@
+body {
+    background-color: #3A78A1;
+    background-image: linear-gradient(#83ABC4 1px, transparent 1px),
+    linear-gradient(90deg, #83ABC4 1px, transparent 1px),
+    linear-gradient(#3A78A1 1px, transparent 1px),
+    linear-gradient(90deg, #3A78A1 1px, transparent 1px),
+    linear-gradient(#4E86AB 1px, transparent 1px),
+    linear-gradient(90deg, #4E86AB 1px, transparent 1px);
+    background-size: 100px 100px,
+    100px 100px,
+    5px 5px,
+    5px 5px,
+    20px 20px,
+    20px 20px;
+    background-position: -1px -1px,
+    -1px -1px,
+    0 0,
+    0 0,
+    -1px -1px,
+    -1px -1px;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    width: 500px;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+}
+
+.task-form {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+    65%{
+        transform: translateY(4%);
+    }
+    80%{
+        transform: translateY(-4%);
+    }
+    95%{
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    50%{
+        -webkit-transform: translateY(-8%);
+    }
+    65%{
+        -webkit-transform: translateY(4%);
+    }
+    80%{
+        -webkit-transform: translateY(-4%);
+    }
+    95%{
+        -webkit-transform: translateY(2%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+h2, h3 {
+    color: #3B78B2;
+    text-shadow: 0 1px 1px white;
+}
+
+h3 {
+    margin-bottom: 1px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(50, 200, 255, 0.8);
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+    text-shadow: 0 1px 2px white;
+    font-weight: bold;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin-top: 1em;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: #333;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #ffffff, #dddddd);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px white;
+    width: 80px;
+    cursor: pointer;
+}
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks__btn {
+    width: 200px;
+}
+
+.tasks__btn:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.choice-of-answer {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.choice-of-answer__btn {
+    margin-right: 15px;
+}
+
+.attention {
+    box-shadow: 0 0 0 0.1rem rgba(250, 62, 0, 0.8);
+}
+
+.sentence {
+    height: 16px;
+    font-size: 15px;
+    color: red;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
+.opacity.opacity {
+    opacity: 1;
+}
+
+.display-none.display-none {
+    display: none;
+}
+
+.btn-wrapper button {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em; width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand { display: none; }
+.select-css:hover { border-color: #888; }
+.select-css:focus { border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+.select-css option { font-weight:normal; }
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+.city-div {
+    width: 500px;
+    height: 100px;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+}
+
+.city-h2 {
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    min-height: 25px;
+}
+
+.server-response-input {
+    border: 1px solid #f5f5f5;
+    background: #f5f5f5;
+    box-shadow: none;
+    color: #f5f5f5;
+}
+
+.like-sentence {
+    height: 16px;
+    font-size: 15px;
+    color: #3B78B2;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+.like-button-wrapper {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.like-button {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.like-button:hover {
+    color: limegreen;
+}
+
+.like-clicked {
+    background: lightgreen;
+    color: forestgreen;
+}
