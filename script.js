@@ -366,11 +366,7 @@ const templateEngine = block => {
     return document.createTextNode('');
   }
 
-  if (
-    typeof block === 'string' ||
-    typeof block === 'number' ||
-    block === true
-  ) {
+  if (typeof block === 'string' || typeof block === 'number' || block) {
     return document.createTextNode(String(block));
   }
 
